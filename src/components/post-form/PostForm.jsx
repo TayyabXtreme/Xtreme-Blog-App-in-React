@@ -68,7 +68,7 @@ export default function PostForm({ post }) {
         });
 
         return () => subscription.unsubscribe();
-    }, [watch, slugTransform, setValue]);   
+    }, [watch, slugTransform, setValue]);
 
     return (
         <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
